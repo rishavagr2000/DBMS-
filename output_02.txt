@@ -1,0 +1,238 @@
+Table BANKACCOUNT created.
+
+Name        Null?    Type         
+----------- -------- ------------ 
+BRANCH_NAME NOT NULL VARCHAR2(20) 
+BRANCH_CITY          VARCHAR2(30) 
+ASSETS               FLOAT(63)    
+Name        Null?    Type         
+----------- -------- ------------ 
+ACCNO       NOT NULL NUMBER(38)   
+BRANCH_NAME          VARCHAR2(20) 
+BALANCE              FLOAT(63)    
+
+Table BANKCUSTOMER created.
+
+
+Table DEPOSITER created.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+CUSTOMER_NAME   NOT NULL VARCHAR2(30) 
+CUSTOMER_STREET          VARCHAR2(3)  
+CUSTOMER_CITY            VARCHAR2(30) 
+Name          Null?    Type         
+------------- -------- ------------ 
+CUSTOMER_NAME NOT NULL VARCHAR2(30) 
+ACCNO         NOT NULL NUMBER(38)   
+
+Table LOAN created.
+
+Name        Null?    Type         
+----------- -------- ------------ 
+LOAN_NUMBER NOT NULL NUMBER(38)   
+BRANCH_NAME          VARCHAR2(30) 
+AMOUNT               FLOAT(63)    
+old:insert into branch values('&branch_name','&branch_name','&assets')
+new:insert into branch values('SBI_Chamrajpet','Bangalore','50000')
+
+1 row inserted.
+
+old:insert into branch values('&branch_name','&branch_name','&assets')
+new:insert into branch values('SBI_ResidencyRoad','Bangalore','10000')
+
+1 row inserted.
+
+
+Substitution cancelled
+old:insert into branch values('&branch_name','&branch_name','&assets')
+new:insert into branch values('SBI_ShivajiRoad','Bombay','20000')
+
+1 row inserted.
+
+old:insert into branch values('&branch_name','&branch_name','&assets')
+new:insert into branch values('SBI_ParlimentRoad','Delhi','10000')
+
+1 row inserted.
+
+old:insert into branch values('&branch_name','&branch_name','&assets')
+new:insert into branch values('SBI_Jantarmantar','Delhi','20000')
+
+1 row inserted.
+
+Name        Null?    Type         
+----------- -------- ------------ 
+LOAN_NUMBER NOT NULL NUMBER(38)   
+BRANCH_NAME          VARCHAR2(30) 
+AMOUNT               FLOAT(63)    
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('1','SBI_ChamrajPet','1000')
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('1','SBI_Chamrajpet','2000')
+
+1 row inserted.
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('2','SBI_ResidencyRoad','5000')
+
+1 row inserted.
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('3','SBI_ShivajiRoad','6000')
+
+1 row inserted.
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('4','SBI_ParlimentRoad','9000')
+
+1 row inserted.
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('5','SBI_Jantarmantar','8000')
+
+1 row inserted.
+
+old:insert into BankAccount values('&accno','&branch_name','&balance')
+new:insert into BankAccount values('6','ShivajiRoad','4000')
+
+old:insert into BankCustomer values('&customer_name','&customer_street','&customer_city')
+new:insert into BankCustomer values('Avinash','BTM','Bangalore')
+
+1 row inserted.
+
+Table BANKCUSTOMER altered.
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+CUSTOMER_NAME   NOT NULL VARCHAR2(30) 
+CUSTOMER_STREET          VARCHAR2(30) 
+CUSTOMER_CITY            VARCHAR2(30) 
+
+old:insert into BankCustomer values('&customer_name','&customer_street','&customer_city')
+new:insert into BankCustomer values('Dinesh','Bannergatta_Road','bangalore')
+
+1 row inserted.
+
+
+old:insert into BankCustomer values('&customer_name','&customer_street','&customer_city')
+new:insert into BankCustomer values('Mohan','National_College_Road','banglaore')
+
+1 row inserted.
+
+old:insert into BankCustomer values('&customer_name','&customer_street','&customer_city')
+new:insert into BankCustomer values('Nikil','Akbar_Road','Delhi')
+
+1 row inserted.
+
+old:insert into BankCustomer values('&customer_name','&customer_street','&customer_city')
+new:insert into BankCustomer values('Ravi','Prithviraj_Road','Delhi')
+
+1 row inserted.
+
+old:insert into depositer values('&customer_name','&accno')
+new:insert into depositer values('Avinash','1')
+
+1 row inserted.
+
+old:insert into depositer values('&customer_name','&accno')
+new:insert into depositer values('Dinesh','2')
+
+1 row inserted.
+
+old:insert into depositer values('&customer_name','&accno')
+new:insert into depositer values('Nikil','4')
+
+1 row inserted.
+
+old:insert into depositer values('&customer_name','&accno')
+new:insert into depositer values('Ravi','5')
+
+1 row inserted.
+
+old:insert into depositer values('&customer_name','&accno')
+new:insert into depositer values('Mohan','4')
+
+1 row inserted.
+
+
+1 row updated.
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('1','SBI_ChamrajPet','1000')
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('1','SBI_Chamrajpet','1000')
+
+1 row inserted.
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('2','SBI_ResidencyRoad','2000')
+
+1 row inserted.
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('3','SBI_ShivajiRoad','3000')
+
+1 row inserted.
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('4','SBI_ParlimentRoad','4000')
+
+1 row inserted.
+
+
+old:insert into loan values('&loan_number','&branch_name','&amount')
+new:insert into loan values('5','SBI_Jantarmantar','5000')
+
+1 row inserted.
+
+
+Commit complete.
+
+
+Name        Null?    Type         
+----------- -------- ------------ 
+LOAN_NUMBER NOT NULL NUMBER(38)   
+BRANCH_NAME          VARCHAR2(30) 
+AMOUNT               FLOAT(63)    
+
+Name            Null?    Type         
+--------------- -------- ------------ 
+CUSTOMER_NAME   NOT NULL VARCHAR2(30) 
+CUSTOMER_STREET          VARCHAR2(30) 
+CUSTOMER_CITY            VARCHAR2(30) 
+
+Table BORROWER created.
+
+Name          Null?    Type         
+------------- -------- ------------ 
+CUSTOMER_NAME NOT NULL VARCHAR2(30) 
+LOAN_NUMBER   NOT NULL NUMBER(38)   
+old:insert into borrower values('&customer_name','&loan_number')
+new:insert into borrower values('Avinash','1')
+
+1 row inserted.
+
+old:insert into borrower values('&customer_name','&loan_number')
+new:insert into borrower values('Dinesh','2')
+
+1 row inserted.
+
+old:insert into borrower values('&customer_name','&loan_number')
+new:insert into borrower values('Mohan','3')
+
+1 row inserted.
+
+old:insert into borrower values('&customer_name','&loan_number')
+new:insert into borrower values('Nikil','4')
+
+1 row inserted.
+
+old:insert into borrower values('&customer_name','&loan_number')
+new:insert into borrower values('Ravi','5')
+
+1 row inserted.
+
+
+Commit complete.
